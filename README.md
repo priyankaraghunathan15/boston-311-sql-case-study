@@ -708,22 +708,6 @@ ORDER BY z_score DESC;
 
 ---
 
-## 💡 Recommendations
-
-- Prioritize resource allocation in high-backlog neighborhoods like Dorchester, South Boston, and Roxbury to reduce the volume of open requests and improve resident satisfaction.
-
-- Streamline resolution workflows for long-delay complaint types such as tree maintenance, graffiti removal, and traffic management—possibly through outsourcing, automation, or staffing adjustments.
-
-- Monitor seasonal surges in complaint volume (e.g., August spikes) to proactively prepare departments for higher demand periods with staffing or resource planning.
-
-- Promote and support digital adoption, especially for services still relying heavily on phone submissions, by improving mobile app usability and awareness.
-
-- Implement SLA performance tracking dashboards for departments with inconsistent monthly compliance (e.g., BTDT), enabling early intervention and accountability.
-
-- Leverage geospatial data (latitude/longitude) more fully to map service gaps, optimize field operations, and reduce resolution times in underserved areas.
-
----
-
 ## 🌟 Key Insights
 
 - GEN_ and PARK departments demonstrated consistently high SLA compliance, while PWDx effectively managed the city’s highest request volume with strong performance metrics.
@@ -739,6 +723,22 @@ ORDER BY z_score DESC;
 - The Citizens Connect App was the most used reporting channel for major complaints, showing a strong preference for mobile engagement, though some services still rely heavily on phone calls.
 
 - SLA performance trends revealed that some departments, like BTDT, experienced notable fluctuations over the year, while others like GEN_ maintained consistently strong performance.
+
+---
+
+## 💡 Recommendations
+
+- Prioritize resource allocation in high-backlog neighborhoods like Dorchester, South Boston, and Roxbury to reduce the volume of open requests and improve resident satisfaction.
+
+- Streamline resolution workflows for long-delay complaint types such as tree maintenance, graffiti removal, and traffic management—possibly through outsourcing, automation, or staffing adjustments.
+
+- Monitor seasonal surges in complaint volume (e.g., August spikes) to proactively prepare departments for higher demand periods with staffing or resource planning.
+
+- Promote and support digital adoption, especially for services still relying heavily on phone submissions, by improving mobile app usability and awareness.
+
+- Implement SLA performance tracking dashboards for departments with inconsistent monthly compliance (e.g., BTDT), enabling early intervention and accountability.
+
+- Leverage geospatial data (latitude/longitude) more fully to map service gaps, optimize field operations, and reduce resolution times in underserved areas.
 
 ---
 

@@ -27,8 +27,7 @@ Each section below begins with a real-world business question and a summary of t
 
 ### 1. Which departments meet SLA targets most often, and how long do they take to resolve requests?
 
-This query ranks departments based on their SLA compliance percentage and average resolution time for closed requests.  
-It uses conditional aggregation, filtering, and sorting to surface operational performance metrics.
+This query ranks departments based on their SLA compliance percentage and average resolution time for closed requests. It uses conditional aggregation, filtering, and sorting to surface operational performance metrics.
 
 **Result:**  
 | department | total_requests | sla_compliance_pct | avg_resolution_time_hrs |

@@ -345,7 +345,120 @@ ORDER BY sla_rank;
 ### 8. Are departments improving or declining in their SLA performance over time?
 
 **Result:**  
-<img src="images/monthly_sla_trend_by_department.png" alt="Monthly Sla Trend By Department" width="600"/>
+<details>
+  <summary>Click to expand SLA Performance Table</summary>
+
+| department | month_name | sla_pct | prev_month_sla_pct | change_from_last_month | total_requests |
+|---|---|---|---|---|---|
+| ANML | January | 1.0 | NaN | NaN | 41 |
+| ANML | February | 1.0 | 1.0 | 0.0 | 34 |
+| ANML | March | 1.0 | 1.0 | 0.0 | 40 |
+| ANML | April | 0.942 | 1.0 | -0.058 | 69 |
+| ANML | May | 1.0 | 0.942 | 0.058 | 57 |
+| ANML | June | 0.8696 | 1.0 | -0.1304 | 69 |
+| ANML | July | 0.9836 | 0.8696 | 0.114 | 61 |
+| ANML | August | 0.9655 | 0.9836 | -0.0181 | 58 |
+| ANML | September | 1.0 | 0.9655 | 0.0345 | 63 |
+| ANML | October | 0.8919 | 1.0 | -0.1081 | 37 |
+| ANML | November | 0.9688 | 0.8919 | 0.0769 | 64 |
+| ANML | December | 0.9535 | 0.9688 | -0.0153 | 43 |
+| BTDT | January | 0.4801 | NaN | NaN | 5401 |
+| BTDT | February | 0.6822 | 0.4801 | 0.2021 | 5717 |
+| BTDT | March | 0.7266 | 0.6822 | 0.0444 | 6980 |
+| BTDT | April | 0.7276 | 0.7266 | 0.001 | 6767 |
+| BTDT | May | 0.5824 | 0.7276 | -0.1452 | 7225 |
+| BTDT | June | 0.6593 | 0.5824 | 0.0769 | 4732 |
+| BTDT | July | 0.6596 | 0.6593 | 0.0003 | 3546 |
+| BTDT | August | 0.4845 | 0.6596 | -0.1751 | 5185 |
+| BTDT | September | 0.4129 | 0.4845 | -0.0716 | 6432 |
+| BTDT | October | 0.6506 | 0.4129 | 0.2377 | 5177 |
+| BTDT | November | 0.8784 | 0.6506 | 0.2278 | 3199 |
+| BTDT | December | 0.9424 | 0.8784 | 0.064 | 2551 |
+| BWSC | January | 0.9574 | NaN | NaN | 141 |
+| BWSC | February | 0.8272 | 0.9574 | -0.1302 | 81 |
+| BWSC | March | 0.6209 | 0.8272 | -0.2063 | 153 |
+| BWSC | April | 0.5722 | 0.6209 | -0.0487 | 187 |
+| BWSC | May | 0.7778 | 0.5722 | 0.2056 | 144 |
+| BWSC | June | 0.7639 | 0.7778 | -0.0139 | 144 |
+| BWSC | July | 0.7958 | 0.7639 | 0.0319 | 142 |
+| BWSC | August | 0.8062 | 0.7958 | 0.0104 | 129 |
+| BWSC | September | 0.9452 | 0.8062 | 0.139 | 146 |
+| BWSC | October | 0.957 | 0.9452 | 0.0118 | 93 |
+| BWSC | November | 0.9136 | 0.957 | -0.0434 | 81 |
+| BWSC | December | 0.9444 | 0.9136 | 0.0308 | 54 |
+| GEN_ | January | 1.0 | NaN | NaN | 498 |
+| GEN_ | February | 1.0 | 1.0 | 0.0 | 488 |
+| GEN_ | March | 1.0 | 1.0 | 0.0 | 561 |
+| GEN_ | April | 1.0 | 1.0 | 0.0 | 625 |
+| GEN_ | May | 1.0 | 1.0 | 0.0 | 798 |
+| GEN_ | June | 1.0 | 1.0 | 0.0 | 1009 |
+| GEN_ | July | 1.0 | 1.0 | 0.0 | 1314 |
+| GEN_ | August | 1.0 | 1.0 | 0.0 | 1264 |
+| GEN_ | September | 1.0 | 1.0 | 0.0 | 1274 |
+| GEN_ | October | 1.0 | 1.0 | 0.0 | 1223 |
+| GEN_ | November | 1.0 | 1.0 | 0.0 | 923 |
+| GEN_ | December | 1.0 | 1.0 | 0.0 | 760 |
+| INFO | January | 0.8857 | NaN | NaN | 481 |
+| INFO | February | 0.8709 | 0.8857 | -0.0148 | 573 |
+| INFO | March | 0.8602 | 0.8709 | -0.0107 | 601 |
+| INFO | April | 0.8241 | 0.8602 | -0.0361 | 739 |
+| INFO | May | 0.8761 | 0.8241 | 0.052 | 896 |
+| INFO | June | 0.8144 | 0.8761 | -0.0617 | 819 |
+| INFO | July | 0.8646 | 0.8144 | 0.0502 | 960 |
+| INFO | August | 0.8695 | 0.8646 | 0.0049 | 858 |
+| INFO | September | 0.8989 | 0.8695 | 0.0294 | 623 |
+| INFO | October | 0.8243 | 0.8989 | -0.0746 | 552 |
+| INFO | November | 0.8834 | 0.8243 | 0.0591 | 463 |
+| INFO | December | 0.8668 | 0.8834 | -0.0166 | 368 |
+| ISD | January | 0.7586 | NaN | NaN | 1305 |
+| ISD | February | 0.7649 | 0.7586 | 0.0063 | 1140 |
+| ISD | March | 0.8126 | 0.7649 | 0.0477 | 1190 |
+| ISD | April | 0.8343 | 0.8126 | 0.0217 | 1171 |
+| ISD | May | 0.8494 | 0.8343 | 0.0151 | 1235 |
+| ISD | June | 0.8479 | 0.8494 | -0.0015 | 1381 |
+| ISD | July | 0.8915 | 0.8479 | 0.0436 | 1475 |
+| ISD | August | 0.8974 | 0.8915 | 0.0059 | 1588 |
+| ISD | September | 0.8886 | 0.8974 | -0.0088 | 1382 |
+| ISD | October | 0.8829 | 0.8886 | -0.0057 | 1264 |
+| ISD | November | 0.8824 | 0.8829 | -0.0005 | 884 |
+| ISD | December | 0.9322 | 0.8824 | 0.0498 | 855 |
+| PARK | January | 0.9185 | NaN | NaN | 932 |
+| PARK | February | 0.9376 | 0.9185 | 0.0191 | 801 |
+| PARK | March | 0.9505 | 0.9376 | 0.0129 | 1293 |
+| PARK | April | 0.9567 | 0.9505 | 0.0062 | 1525 |
+| PARK | May | 0.941 | 0.9567 | -0.0157 | 2000 |
+| PARK | June | 0.9516 | 0.941 | 0.0106 | 2792 |
+| PARK | July | 0.9487 | 0.9516 | -0.0029 | 2517 |
+| PARK | August | 0.9311 | 0.9487 | -0.0176 | 1916 |
+| PARK | September | 0.9534 | 0.9311 | 0.0223 | 1331 |
+| PARK | October | 0.9209 | 0.9534 | -0.0325 | 973 |
+| PARK | November | 0.9188 | 0.9209 | -0.0021 | 739 |
+| PARK | December | 0.9194 | 0.9188 | 0.0006 | 620 |
+| PROP | January | 0.427 | NaN | NaN | 89 |
+| PROP | February | 0.3947 | 0.427 | -0.0323 | 114 |
+| PROP | March | 0.6029 | 0.3947 | 0.2082 | 204 |
+| PROP | April | 0.7978 | 0.6029 | 0.1949 | 272 |
+| PROP | May | 0.7479 | 0.7978 | -0.0499 | 234 |
+| PROP | June | 0.7516 | 0.7479 | 0.0037 | 322 |
+| PROP | July | 0.8878 | 0.7516 | 0.1362 | 196 |
+| PROP | August | 0.8567 | 0.8878 | -0.0311 | 342 |
+| PROP | September | 0.9441 | 0.8567 | 0.0874 | 143 |
+| PROP | October | 0.9825 | 0.9441 | 0.0384 | 171 |
+| PROP | November | 0.9913 | 0.9825 | 0.0088 | 115 |
+| PWDx | January | 0.885 | NaN | NaN | 10313 |
+| PWDx | February | 0.891 | 0.885 | 0.006 | 8361 |
+| PWDx | March | 0.8871 | 0.891 | -0.0039 | 9369 |
+| PWDx | April | 0.898 | 0.8871 | 0.0109 | 9610 |
+| PWDx | May | 0.9307 | 0.898 | 0.0327 | 10170 |
+| PWDx | June | 0.9385 | 0.9307 | 0.0078 | 10388 |
+| PWDx | July | 0.9243 | 0.9385 | -0.0142 | 11302 |
+| PWDx | August | 0.9486 | 0.9243 | 0.0243 | 13711 |
+| PWDx | September | 0.9539 | 0.9486 | 0.0053 | 13089 |
+| PWDx | October | 0.9368 | 0.9539 | -0.0171 | 9240 |
+| PWDx | November | 0.9277 | 0.9368 | -0.0091 | 8032 |
+| PWDx | December | 0.8975 | 0.9277 | -0.0302 | 9959 |
+
+</details>
 
 <details>
   <summary>🧠 View SQL Code</summary>

@@ -316,6 +316,17 @@ ORDER BY month;
 **Result:**  
 <img src="images/zscore_anomalies.png" alt="Zscore Anomalies" width="100"/>
 
+The full query returned 107 rows. A preview of the first few rows is shown below:
+
+| Department       | Month    | SLA % | Δ from Prev Month | Total Requests |
+|------------------|----------|-------|--------------------|----------------|
+| Sanitation       | January  | 0.91  | N/A                | 320            |
+| Sanitation       | February | 0.94  | +0.03              | 340            |
+| Parks & Rec      | January  | 0.87  | N/A                | 190            |
+| Parks & Rec      | February | 0.89  | +0.02              | 200            |
+| Code Enforcement | January  | 0.78  | N/A                | 410            |
+| ...              | ...      | ...   | ...                | ...            |
+
 <details>
   <summary>🧠 View SQL Code</summary>
 

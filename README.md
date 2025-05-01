@@ -345,6 +345,7 @@ ORDER BY sla_rank;
 ### 8. Are departments improving or declining in their SLA performance over time?
 
 **Result:**  
+The table below contains 107 rows. To keep the README concise, it has been placed inside a collapsible section. Click to expand and view the full data.
 <details>
   <summary>Click to expand SLA Performance Table</summary>
 

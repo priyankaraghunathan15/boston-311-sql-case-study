@@ -63,7 +63,8 @@ ORDER BY sla_compliance_pct ASC, avg_resolution_time_hrs DESC;
 </details>
 
 <details>
-  <img src="images/query 1.png" alt="Query 1" width="700"/>
+  <summary> 📊 Dashboard</summary>
+  <img src="images/query 1.png" alt="Query 1" width="1000"/>
 
   </details>
 	

@@ -51,6 +51,7 @@ ORDER BY sla_compliance_pct ASC, avg_resolution_time_hrs DESC;
 
 </details>
 
+
 ### 2. How many 311 complaints were submitted each month?
 
 This query counts the number of 311 complaints submitted each month by extracting and grouping by the month from the request date. It helps identify monthly patterns and trends in complaint volume across the year.
@@ -71,6 +72,7 @@ ORDER BY EXTRACT(MONTH FROM open_dt);
 ```
 
 </details>
+
 
 ### 3. For the most frequently reported 311 service request types, which submission source is most commonly used and what share of the total requests does it represent?
 
@@ -116,6 +118,7 @@ ORDER BY t.total_requests DESC;
 
 </details>
 
+
 ### 4. Which neighborhoods have the most currently open 311 requests and what’s the average time taken to resolve cases in those neighborhoods?
 
 **Result:**  
@@ -139,6 +142,7 @@ ORDER BY open_requests DESC;
 ```
 
 </details>
+
 
 ### 5. What are the most common complaint types in each Boston neighborhood?
 
@@ -175,6 +179,7 @@ ORDER BY request_count DESC;
 
 </details>
 
+
 ### 6. Which 311 complaint types take the longest to resolve on average?
 
 **Result:**  
@@ -197,6 +202,7 @@ LIMIT 10;
 ```
 
 </details>
+
 
 ### 7. Which departments maintain SLA compliance while managing high workloads and open case volumes?
 
@@ -224,6 +230,7 @@ ORDER BY sla_rank;
 ```
 
 </details>
+
 
 ### 8. Are departments improving or declining in their SLA performance over time?
 
@@ -264,6 +271,7 @@ ORDER BY department, month;
 
 </details>
 
+
 ### 9. How is the volume of 311 requests changing over time, and what’s the rolling 3-month average?
 
 **Result:**  
@@ -301,6 +309,7 @@ ORDER BY month;
 ```
 
 </details>
+
 
 ### 10. Were there any months in 2024 with unusually high complaint volumes compared to the typical pattern?
 

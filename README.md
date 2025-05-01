@@ -207,7 +207,7 @@ LIMIT 10;
 ### 7. Which departments maintain SLA compliance while managing high workloads and open case volumes?
 
 **Result:**  
-<img src="images/sla_vs_open_workload.png" alt="Sla Vs Open Workload" width="700"/>
+<img src="images/sla_vs_open_workload.png" alt="Sla Vs Open Workload" width="800"/>
 
 <details>
   <summary>🧠 View SQL Code</summary>
@@ -275,7 +275,7 @@ ORDER BY department, month;
 ### 9. How is the volume of 311 requests changing over time, and what’s the rolling 3-month average?
 
 **Result:**  
-<img src="images/monthly_volume_trend.png" alt="Monthly Volume Trend" width="400"/>
+<img src="images/monthly_volume_trend.png" alt="Monthly Volume Trend" width="300"/>
 
 <details>
   <summary>🧠 View SQL Code</summary>
@@ -314,7 +314,7 @@ ORDER BY month;
 ### 10. Were there any months in 2024 with unusually high complaint volumes compared to the typical pattern?
 
 **Result:**  
-<img src="images/zscore_anomalies.png" alt="Zscore Anomalies" width="300"/>
+<img src="images/zscore_anomalies.png" alt="Zscore Anomalies" width="100"/>
 
 <details>
   <summary>🧠 View SQL Code</summary>

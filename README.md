@@ -51,8 +51,6 @@ ORDER BY sla_compliance_pct ASC, avg_resolution_time_hrs DESC;
 
 </details>
 
----
-
 ### 2. How many 311 complaints were submitted each month?
 
 📈 **Result:**  

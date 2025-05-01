@@ -107,7 +107,7 @@ ORDER BY EXTRACT(MONTH FROM open_dt);
 
 ### 3. For the most frequently reported 311 service request types, which submission source is most commonly used and what share of the total requests does it represent?
 
-This code finds the top 10 most frequently reported 311 service request types and identifies the most commonly used submission source for each. It also calculates what percentage of the total requests that source represents, helping to highlight how residents typically report different types of issues.
+This query finds the top 10 most frequently reported 311 service request types and identifies the most commonly used submission source for each. It also calculates what percentage of the total requests that source represents, helping to highlight how residents typically report different types of issues.
 
 **Result:**  
 | Reason                           | Top Source           |   Source Count |   Total Requests |   Source Percentage (%) |
@@ -173,6 +173,8 @@ ORDER BY t.total_requests DESC;
 
 ### 4. Which neighborhoods have the most currently open 311 requests and what’s the average time taken to resolve cases in those neighborhoods?
 
+This query identifies neighborhoods with at least 100 service requests and shows which have the highest number of currently open 311 cases. It also provides the average time taken to resolve requests in each neighborhood, helping assess areas with backlog and overall service efficiency.
+
 **Result:**  
 | Neighborhood                                 |   Open Requests |   Total Requests |   Avg Resolution Time (hrs) |
 |:---------------------------------------------|----------------:|-----------------:|----------------------------:|
@@ -221,6 +223,8 @@ ORDER BY open_requests DESC;
 <br>
 
 ### 5. What are the most common complaint types in each Boston neighborhood?
+
+This query determines the most common 311 complaint type in each Boston neighborhood by ranking issues based on their frequency. It returns the top complaint per neighborhood, helping identify the most reported concerns across different areas.
 
 **Result:**  
 | Neighborhood                                 | Top Complaint Type               |   Request Count |
@@ -283,6 +287,8 @@ ORDER BY request_count DESC;
 
 ### 6. Which 311 complaint types take the longest to resolve on average?
 
+This query finds the 10 complaint types that take the longest to resolve on average, considering only those with at least 100 requests. It helps highlight service areas with the greatest delays in resolution.
+
 **Result:**  
 | Reason                                  | Total Requests | Avg Resolution Time (hrs) |
 |-----------------------------------------|----------------|----------------------------|
@@ -317,6 +323,8 @@ LIMIT 10;
 <br>
 
 ### 7. Which departments maintain SLA compliance while managing high workloads and open case volumes?
+
+This query evaluates which departments handle a high volume of 311 requests while maintaining strong SLA compliance. It reports each department’s total and open requests, the percentage of open cases, SLA compliance rate, and ranks them by SLA performance, considering only departments with at least 100 requests.
 
 **Result:**  
 | Department | Total Requests | Open Requests | Open Request % | SLA Compliance % | SLA Rank |
@@ -358,6 +366,8 @@ ORDER BY sla_rank;
 <br>
 
 ### 8. Are departments improving or declining in their SLA performance over time?
+
+This query tracks monthly SLA performance for each department to identify trends in service quality over time. It calculates the SLA compliance rate per month, compares it to the previous month, and shows whether departments are improving or declining. Only months with at least 30 closed requests are included to ensure reliability.
 
 **Result:**  
 The table below contains 107 rows. To keep the README concise, it has been placed inside a collapsible section. Click to expand and view the full data.
@@ -514,6 +524,8 @@ ORDER BY department, month;
 
 ### 9. How is the volume of 311 requests changing over time, and what’s the rolling 3-month average?
 
+This query analyzes how 311 request volumes have changed over time by summarizing monthly totals and calculating a rolling 3-month average. It helps smooth out short-term fluctuations and reveals overall trends in request volume.
+
 **Result:**  
 | Month      | Total Requests | Rolling 3-Month Avg |
 |------------|----------------|----------------------|
@@ -572,6 +584,8 @@ ORDER BY month;
 <br>
 
 ### 10. Were there any months in 2024 with unusually high complaint volumes compared to the typical pattern?
+
+This query detects months in 2024 with unusually high 311 complaint volumes by calculating the z-score for each month based on historical averages. Months with a z-score of ±1.5 or more are flagged as significantly above or below typical request levels, helping identify potential spikes in public issues.
 
 **Result:**  
 | Month   | Total Requests | Z-Score |

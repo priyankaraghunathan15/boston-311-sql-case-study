@@ -72,7 +72,7 @@ ORDER BY EXTRACT(MONTH FROM open_dt);
 ```
 
 </details>
-
+<br>
 
 ### 3. For the most frequently reported 311 service request types, which submission source is most commonly used and what share of the total requests does it represent?
 
@@ -117,7 +117,7 @@ ORDER BY t.total_requests DESC;
 ```
 
 </details>
-
+<br>
 
 ### 4. Which neighborhoods have the most currently open 311 requests and what’s the average time taken to resolve cases in those neighborhoods?
 
@@ -142,7 +142,7 @@ ORDER BY open_requests DESC;
 ```
 
 </details>
-
+<br>
 
 ### 5. What are the most common complaint types in each Boston neighborhood?
 
@@ -178,7 +178,7 @@ ORDER BY request_count DESC;
 ```
 
 </details>
-
+<br>
 
 ### 6. Which 311 complaint types take the longest to resolve on average?
 
@@ -202,7 +202,7 @@ LIMIT 10;
 ```
 
 </details>
-
+<br>
 
 ### 7. Which departments maintain SLA compliance while managing high workloads and open case volumes?
 
@@ -230,7 +230,7 @@ ORDER BY sla_rank;
 ```
 
 </details>
-
+<br>
 
 ### 8. Are departments improving or declining in their SLA performance over time?
 
@@ -270,7 +270,7 @@ ORDER BY department, month;
 ```
 
 </details>
-
+<br>
 
 ### 9. How is the volume of 311 requests changing over time, and what’s the rolling 3-month average?
 
@@ -309,7 +309,7 @@ ORDER BY month;
 ```
 
 </details>
-
+<br>
 
 ### 10. Were there any months in 2024 with unusually high complaint volumes compared to the typical pattern?
 
@@ -351,5 +351,5 @@ ORDER BY z_score DESC;
 ```
 
 </details>
-
+<br>
 

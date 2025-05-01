@@ -77,7 +77,7 @@ ORDER BY EXTRACT(MONTH FROM open_dt);
 ### 3. For the most frequently reported 311 service request types, which submission source is most commonly used and what share of the total requests does it represent?
 
 **Result:**  
-<img src="images/top_sources_by_reason.png" alt="Top Sources By Reason" width="650"/>
+<img src="images/top_sources_by_reason.png" alt="Top Sources By Reason" width="700"/>
 
 <details>
   <summary>🧠 View SQL Code</summary>
@@ -122,7 +122,7 @@ ORDER BY t.total_requests DESC;
 ### 4. Which neighborhoods have the most currently open 311 requests and what’s the average time taken to resolve cases in those neighborhoods?
 
 **Result:**  
-<img src="images/open_requests_by_neighborhood.png" alt="Open Requests By Neighborhood" width="650"/>
+<img src="images/open_requests_by_neighborhood.png" alt="Open Requests By Neighborhood" width="700"/>
 
 <details>
   <summary>🧠 View SQL Code</summary>
@@ -147,7 +147,7 @@ ORDER BY open_requests DESC;
 ### 5. What are the most common complaint types in each Boston neighborhood?
 
 **Result:**  
-<img src="images/top_complaints_by_neighborhood.png" alt="Top Complaints By Neighborhood" width="650"/>
+<img src="images/top_complaints_by_neighborhood.png" alt="Top Complaints By Neighborhood" width="700"/>
 
 <details>
   <summary>🧠 View SQL Code</summary>

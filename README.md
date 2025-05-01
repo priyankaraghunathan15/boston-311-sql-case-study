@@ -135,7 +135,7 @@ SELECT
     ROUND(AVG(resolution_time_hrs), 2) AS avg_resolution_time_hrs
 FROM vw_cleaned_requests
 WHERE neighborhood IS NOT NULL
-  AND TRIM(neighborhood) <> ''
+	AND TRIM(neighborhood) <> ''
 GROUP BY neighborhood
 HAVING COUNT(*) >= 100
 ORDER BY open_requests DESC;

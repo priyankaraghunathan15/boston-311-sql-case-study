@@ -629,3 +629,22 @@ ORDER BY z_score DESC;
 </details>
 <br>
 
+---
+
+## 🌟 Key Insights
+
+- GEN_ and PARK departments demonstrated consistently high SLA compliance, while PWDx effectively managed the city’s highest request volume with strong performance metrics.
+
+- Dorchester, South Boston, and Roxbury have the highest number of open 311 requests, suggesting possible service backlogs or resource constraints in these neighborhoods.
+
+- Enforcement & Abandoned Vehicles was the top complaint type across most neighborhoods, highlighting a widespread concern among residents.
+
+- Tree-related issues, graffiti, and traffic management were the slowest to resolve, each taking several hundred hours on average, pointing to operational inefficiencies in specific service areas.
+
+- August 2024 experienced a statistically significant spike in complaint volume, indicating potential seasonal surges or citywide events driving demand.
+
+- The Citizens Connect App was the most used reporting channel for major complaints, showing a strong preference for mobile engagement, though some services still rely heavily on phone calls.
+
+- SLA performance trends revealed that some departments, like BTDT, experienced notable fluctuations over the year, while others like GEN_ maintained consistently strong performance.
+
+

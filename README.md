@@ -92,8 +92,9 @@ FROM raw_311_data
 WHERE open_dt IS NOT NULL
   AND neighborhood IS NOT NULL
   AND department IS NOT NULL;
-</details>
 ```
+</details>
+
 ---
 
 ## 📈 Business Questions & SQL Solutions

@@ -31,7 +31,18 @@ This query ranks departments based on their SLA compliance percentage and averag
 It uses conditional aggregation, filtering, and sorting to surface operational performance metrics.
 
 **Result:**  
-<img src="images/sla_by_dept.png" alt="SLA by Department Chart" width="600"/>
+| department | total_requests | sla_compliance_pct | avg_resolution_time_hrs |
+|------------|----------------|---------------------|--------------------------|
+| BTDT       | 62912          | 0.63                | 192.85                   |
+| PROP       | 2208           | 0.78                | 816.84                   |
+| BWSC       | 1495           | 0.80                | 305.11                   |
+| ISD        | 14870          | 0.85                | 273.65                   |
+| INFO       | 7933           | 0.86                | 150.10                   |
+| PWDx       | 123544         | 0.92                | 62.05                    |
+| PARK       | 17439          | 0.94                | 686.73                   |
+| ANML       | 636            | 0.96                | 44.20                    |
+| GEN_       | 10737          | 1.00                | 2.68                     |
+
 
 <details>
   <summary>🧠 View SQL Code</summary>
@@ -57,7 +68,21 @@ ORDER BY sla_compliance_pct ASC, avg_resolution_time_hrs DESC;
 This query counts the number of 311 complaints submitted each month by extracting and grouping by the month from the request date. It helps identify monthly patterns and trends in complaint volume across the year.
 
 **Result:**  
-<img src="images/monthly_volume.png" alt="Monthly Volume" width="300"/>
+| Month Name   |   Total Requests |
+|:-------------|-----------------:|
+| January      |            20638 |
+| February     |            18697 |
+| March        |            22164 |
+| April        |            23055 |
+| May          |            25011 |
+| June         |            26118 |
+| July         |            26634 |
+| August       |            28909 |
+| September    |            28039 |
+| October      |            23305 |
+| November     |            19859 |
+| December     |            20194 |
+
 
 <details>
   <summary>🧠 View SQL Code</summary>
@@ -77,7 +102,19 @@ ORDER BY EXTRACT(MONTH FROM open_dt);
 ### 3. For the most frequently reported 311 service request types, which submission source is most commonly used and what share of the total requests does it represent?
 
 **Result:**  
-<img src="images/top_sources_by_reason.png" alt="Top Sources By Reason" width="700"/>
+| Reason                           | Top Source           |   Source Count |   Total Requests |   Source Percentage (%) |
+|:---------------------------------|:---------------------|---------------:|-----------------:|------------------------:|
+| Enforcement & Abandoned Vehicles | Citizens Connect App |          56844 |            68058 |                   83.52 |
+| Street Cleaning                  | Citizens Connect App |          23544 |            49840 |                   47.24 |
+| Code Enforcement                 | Citizens Connect App |          27433 |            36745 |                   74.66 |
+| Highway Maintenance              | Citizens Connect App |          14900 |            22529 |                   66.14 |
+| Trees                            | City Worker App      |           3956 |            12027 |                   32.89 |
+| Signs & Signals                  | Citizens Connect App |           7114 |            11295 |                   62.98 |
+| Sanitation                       | Constituent Call     |           9683 |            10757 |                   90.02 |
+| Needle Program                   | Citizens Connect App |           8660 |            10726 |                   80.74 |
+| Recycling                        | Constituent Call     |           6684 |            10690 |                   62.53 |
+| Park Maintenance & Safety        | Citizens Connect App |           5133 |             7661 |                   67.00 |
+
 
 <details>
   <summary>🧠 View SQL Code</summary>
@@ -122,7 +159,31 @@ ORDER BY t.total_requests DESC;
 ### 4. Which neighborhoods have the most currently open 311 requests and what’s the average time taken to resolve cases in those neighborhoods?
 
 **Result:**  
-<img src="images/open_requests_by_neighborhood.png" alt="Open Requests By Neighborhood" width="700"/>
+| Neighborhood                                 |   Open Requests |   Total Requests |   Avg Resolution Time (hrs) |
+|:---------------------------------------------|----------------:|-----------------:|----------------------------:|
+| Dorchester                                   |            4769 |            35974 |                      191.1  |
+| South Boston / South Boston Waterfront       |            3665 |            23949 |                      101    |
+| Roxbury                                      |            2952 |            24841 |                      148.08 |
+| Allston / Brighton                           |            2806 |            22779 |                      156.75 |
+| Jamaica Plain                                |            2610 |            18214 |                      160.81 |
+| East Boston                                  |            2815 |            17411 |                      160.81 |
+| South End                                    |            2559 |            20386 |                       79.9  |
+| Downtown / Financial District                |            2459 |            15624 |                      126.35 |
+| Back Bay                                     |            2274 |            14463 |                      108.75 |
+| Boston                                       |            2051 |            12997 |                      123.57 |
+| Charlestown                                  |            1700 |             8939 |                      240.7  |
+| Roslindale                                   |            1461 |             9322 |                      265.47 |
+| Greater Mattapan                             |            1443 |            10096 |                      195.41 |
+| West Roxbury                                 |            1375 |             8591 |                      314.1  |
+| Hyde Park                                    |            1277 |             9841 |                      238.31 |
+| Fenway / Kenmore / Audubon Circle / Longwood |            1157 |             5484 |                      152.76 |
+| Beacon Hill                                  |             997 |             9848 |                      102.63 |
+| Mission Hill                                 |             554 |             5028 |                      187.9  |
+| South Boston                                 |             440 |             2888 |                      148.05 |
+| Brighton                                     |             326 |             2019 |                      168.85 |
+| Allston                                      |             147 |             1260 |                      119.56 |
+| Mattapan                                     |              61 |              651 |                      232.75 |
+
 
 <details>
   <summary>🧠 View SQL Code</summary>
@@ -147,7 +208,32 @@ ORDER BY open_requests DESC;
 ### 5. What are the most common complaint types in each Boston neighborhood?
 
 **Result:**  
-<img src="images/top_complaints_by_neighborhood.png" alt="Top Complaints By Neighborhood" width="700"/>
+| Neighborhood                                 | Top Complaint Type               |   Request Count |
+|:---------------------------------------------|:---------------------------------|----------------:|
+| South Boston / South Boston Waterfront       | Enforcement & Abandoned Vehicles |           11514 |
+| Dorchester                                   | Enforcement & Abandoned Vehicles |            8030 |
+| East Boston                                  | Enforcement & Abandoned Vehicles |            5786 |
+| South End                                    | Street Cleaning                  |            5501 |
+| Allston / Brighton                           | Enforcement & Abandoned Vehicles |            5253 |
+| Roxbury                                      | Street Cleaning                  |            4444 |
+| Jamaica Plain                                | Enforcement & Abandoned Vehicles |            4420 |
+| Boston                                       | Enforcement & Abandoned Vehicles |            4128 |
+| Downtown / Financial District                | Enforcement & Abandoned Vehicles |            3837 |
+| Back Bay                                     | Street Cleaning                  |            3680 |
+| Beacon Hill                                  | Street Cleaning                  |            3453 |
+| Charlestown                                  | Enforcement & Abandoned Vehicles |            3132 |
+| Roslindale                                   | Enforcement & Abandoned Vehicles |            2065 |
+| Greater Mattapan                             | Code Enforcement                 |            1611 |
+| Fenway / Kenmore / Audubon Circle / Longwood | Enforcement & Abandoned Vehicles |            1554 |
+| Hyde Park                                    | Enforcement & Abandoned Vehicles |            1544 |
+| West Roxbury                                 | Enforcement & Abandoned Vehicles |            1110 |
+| Mission Hill                                 | Code Enforcement                 |            1010 |
+| South Boston                                 | Enforcement & Abandoned Vehicles |            1010 |
+| Brighton                                     | Enforcement & Abandoned Vehicles |             517 |
+| Allston                                      | Enforcement & Abandoned Vehicles |             262 |
+| Mattapan                                     | Code Enforcement                 |              98 |
+| Chestnut Hill                                | Code Enforcement                 |               4 |
+
 
 <details>
   <summary>🧠 View SQL Code</summary>
@@ -183,7 +269,18 @@ ORDER BY request_count DESC;
 ### 6. Which 311 complaint types take the longest to resolve on average?
 
 **Result:**  
-<img src="images/slowest_resolving_reasons.png" alt="Slowest Resolving Reasons" width="550"/>
+| Reason                                  | Total Requests | Avg Resolution Time (hrs) |
+|-----------------------------------------|----------------|----------------------------|
+| Trees                                   | 10,300         | 1071.16                    |
+| Graffiti                                | 2,132          | 800.66                     |
+| Traffic Management & Engineering        | 635            | 688.86                     |
+| Street Lights                           | 5,274          | 546.54                     |
+| Building                                | 3,746          | 464.10                     |
+| Housing                                 | 5,044          | 397.06                     |
+| Administrative & General Requests       | 1,766          | 381.49                     |
+| Notification                            | 433            | 359.57                     |
+| Catchbasin                              | 298            | 314.21                     |
+| Sidewalk Cover / Manhole                | 193            | 312.96                     |
 
 <details>
   <summary>🧠 View SQL Code</summary>
@@ -207,10 +304,21 @@ LIMIT 10;
 ### 7. Which departments maintain SLA compliance while managing high workloads and open case volumes?
 
 **Result:**  
-<img src="images/sla_vs_open_workload.png" alt="Sla Vs Open Workload" width="800"/>
+| Department | Total Requests | Open Requests | Open Request % | SLA Compliance % | SLA Rank |
+|------------|----------------|----------------|----------------|------------------|----------|
+| GEN_       | 10,737         | 0              | 0.00           | 1.00             | 1        |
+| PARK       | 19,085         | 1,646          | 0.09           | 0.94             | 2        |
+| ANML       | 762            | 126            | 0.17           | 0.90             | 3        |
+| PWDx       | 130,764        | 7,220          | 0.06           | 0.87             | 4        |
+| PROP       | 2,596          | 388            | 0.15           | 0.74             | 5        |
+| ISD        | 18,635         | 3,765          | 0.20           | 0.73             | 6        |
+| INFO       | 14,390         | 6,457          | 0.45           | 0.59             | 7        |
+| BWSC       | 3,366          | 1,871          | 0.56           | 0.53             | 8        |
+| BTDT       | 81,529         | 18,617         | 0.23           | 0.50             | 9        |
+| BPD_       | 296            | 253            | 0.85           | 0.18             | 10       |
+| BHA_       | 129            | 127            | 0.98           | 0.14             | 11       |
+| BPS_       | 177            | 173            | 0.98           | 0.13             | 12       |
 
-<details>
-  <summary>🧠 View SQL Code</summary>
 
 ```sql
 SELECT
@@ -275,7 +383,20 @@ ORDER BY department, month;
 ### 9. How is the volume of 311 requests changing over time, and what’s the rolling 3-month average?
 
 **Result:**  
-<img src="images/monthly_volume_trend.png" alt="Monthly Volume Trend" width="300"/>
+| Month      | Total Requests | Rolling 3-Month Avg |
+|------------|----------------|----------------------|
+| January    | 20,638         | 20,638.00            |
+| February   | 18,697         | 19,667.50            |
+| March      | 22,164         | 20,499.67            |
+| April      | 23,055         | 21,305.33            |
+| May        | 25,011         | 23,410.00            |
+| June       | 26,118         | 24,728.00            |
+| July       | 26,634         | 25,921.00            |
+| August     | 28,909         | 27,220.33            |
+| September  | 28,039         | 27,860.67            |
+| October    | 23,305         | 26,751.00            |
+| November   | 19,859         | 23,734.33            |
+| December   | 20,194         | 21,119.33            |
 
 <details>
   <summary>🧠 View SQL Code</summary>

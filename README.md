@@ -94,6 +94,7 @@ WHERE open_dt IS NOT NULL
   AND department IS NOT NULL;
 </details>
 ```
+---
 
 ## 📈 Business Questions & SQL Solutions
 

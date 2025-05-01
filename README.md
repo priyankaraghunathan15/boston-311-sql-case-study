@@ -51,6 +51,7 @@ ORDER BY sla_compliance_pct ASC, avg_resolution_time_hrs DESC;
 
 </details>
 <br><br>
+
 ### 2. How many 311 complaints were submitted each month?
 
 This query counts the number of 311 complaints submitted each month by extracting and grouping by the month from the request date. It helps identify monthly patterns and trends in complaint volume across the year.

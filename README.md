@@ -51,5 +51,26 @@ ORDER BY sla_compliance_pct ASC, avg_resolution_time_hrs DESC;
 
 </details>
 
+---
 
+### 2. How many 311 complaints were submitted each month?
+
+📈 **Result:**  
+<img src="images/monthly_volume.png" alt="Monthly Volume" width="600"/>
+
+<details>
+  <summary>🧠 View SQL Code</summary>
+
+```sql
+SELECT
+    TRIM(TO_CHAR(open_dt, 'Month')) AS month_name,
+    COUNT(*) AS total_requests
+FROM vw_cleaned_requests
+GROUP BY month_name, EXTRACT(MONTH FROM open_dt)
+ORDER BY EXTRACT(MONTH FROM open_dt);
+```
+
+</details>
+
+---
 

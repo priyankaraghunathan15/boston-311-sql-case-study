@@ -458,9 +458,10 @@ ORDER BY sla_rank;
 | PWDx | November | 0.9277 | 0.9368 | -0.0091 | 8032 |
 | PWDx | December | 0.8975 | 0.9277 | -0.0302 | 9959 |
 
-</div>
-
 </details>
+
+<details>
+
   <summary>🧠 View SQL Code</summary>
 
 ```sql

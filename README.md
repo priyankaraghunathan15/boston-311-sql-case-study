@@ -57,7 +57,7 @@ ORDER BY sla_compliance_pct ASC, avg_resolution_time_hrs DESC;
 This query counts the number of 311 complaints submitted each month by extracting and grouping by the month from the request date. It helps identify monthly patterns and trends in complaint volume across the year.
 
 **Result:**  
-<img src="images/monthly_volume.png" alt="Monthly Volume" width="600"/>
+<img src="images/monthly_volume.png" alt="Monthly Volume" width="400"/>
 
 <details>
   <summary>🧠 View SQL Code</summary>

@@ -164,7 +164,7 @@ ORDER BY t.total_requests DESC;
 
 <details>
   <summary> 📊 Dashboard</summary>
-  <img src="images/query 3.png" alt="Query 3" width="1000"/>
+  <img src="images/query 3_v2.png" alt="Query 3" width="1000"/>
 
   </details>
   

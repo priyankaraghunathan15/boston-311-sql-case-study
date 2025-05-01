@@ -7,7 +7,7 @@
 This project explores 311 service request data from the City of Boston using advanced SQL analytics.  
 It dives into complaint trends, resolution efficiency, departmental SLA compliance, and citizen behavior.
 
-Through 10 business-driven queries, this project demonstrates senior-level SQL techniques including:
+Through 10 business-driven queries, this project demonstrates advanced SQL techniques including:
 
 - CTEs and window functions
 - Trend and volume analysis

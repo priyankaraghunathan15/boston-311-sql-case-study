@@ -107,8 +107,9 @@ ORDER BY EXTRACT(MONTH FROM open_dt);
 
 ### 3. For the most frequently reported 311 service request types, which submission source is most commonly used and what share of the total requests does it represent?
 
-**Result:**  
 This code finds the top 10 most frequently reported 311 service request types and identifies the most commonly used submission source for each. It also calculates what percentage of the total requests that source represents, helping to highlight how residents typically report different types of issues.
+
+**Result:**  
 | Reason                           | Top Source           |   Source Count |   Total Requests |   Source Percentage (%) |
 |:---------------------------------|:---------------------|---------------:|-----------------:|------------------------:|
 | Enforcement & Abandoned Vehicles | Citizens Connect App |          56844 |            68058 |                   83.52 |

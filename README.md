@@ -22,5 +22,5 @@ This project analyzes 311 service request data from the City of Boston using adv
 
 ## 📈 Business Questions & SQL Solutions
 
-Each section below presents a real-world business question and the SQL logic used to solve it, followed by result visualizations where relevant.
+Each section below begins with a real-world business question and a summary of the results. The corresponding SQL logic and visualizations are provided in collapsible sections to highlight both the analytical process and the insights derived from the data.
 

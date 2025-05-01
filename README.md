@@ -20,6 +20,81 @@ This project analyzes 311 service request data from the City of Boston using adv
 
 ---
 
+## 🛠️ Data Setup
+
+This project uses a cleaned version of Boston's 311 service request data. The following scripts define the schema for the base table and a streamlined view used throughout the analysis.
+
+<details>
+  <summary>📄 Table: <code>raw_311_data</code></summary>
+
+```sql
+CREATE TABLE raw_311_data (
+    case_enquiry_id BIGINT PRIMARY KEY,
+    open_dt TIMESTAMP,
+    sla_target_dt TIMESTAMP,
+    closed_dt TIMESTAMP,
+    on_time VARCHAR(20),
+    case_status VARCHAR(20),
+    closure_reason TEXT,
+    case_title TEXT,
+    subject VARCHAR(100),
+    reason VARCHAR(100),
+    type VARCHAR(100),
+    queue VARCHAR(100),
+    department VARCHAR(100),
+    submitted_photo TEXT,
+    closed_photo TEXT,
+    location TEXT,
+    fire_district VARCHAR(10),
+    pwd_district VARCHAR(10),
+    city_council_district VARCHAR(10),
+    police_district VARCHAR(10),
+    neighborhood VARCHAR(100),
+    neighborhood_services_district VARCHAR(10),
+    ward VARCHAR(20),
+    precinct VARCHAR(10),
+    location_street_name TEXT,
+    location_zipcode VARCHAR(10),
+    latitude DOUBLE PRECISION,
+    longitude DOUBLE PRECISION,
+    geom_4326 TEXT,
+    source VARCHAR(100)
+);
+```
+</details> <details> <summary>🔍 View: <code>vw_cleaned_requests</code></summary>
+
+```sql
+CREATE OR REPLACE VIEW vw_cleaned_requests AS
+SELECT
+    case_enquiry_id,
+    open_dt::timestamp,
+    closed_dt::timestamp,
+    sla_target_dt::timestamp,
+    department,
+    subject,
+    reason,
+    case_title,
+    case_status,
+    on_time,
+    neighborhood,
+    ward,
+    latitude,
+    longitude,
+    source,
+
+    EXTRACT(EPOCH FROM (closed_dt - open_dt))/3600 AS resolution_time_hrs,
+    CASE WHEN on_time = 'ONTIME' THEN 1 ELSE 0 END AS sla_met,
+    CASE WHEN closed_dt IS NULL THEN 'Open' ELSE 'Closed' END AS current_status,
+    DATE_TRUNC('month', open_dt) AS open_month,
+    CASE WHEN latitude IS NOT NULL AND longitude IS NOT NULL THEN TRUE ELSE FALSE END AS has_geo
+
+FROM raw_311_data
+WHERE open_dt IS NOT NULL
+  AND neighborhood IS NOT NULL
+  AND department IS NOT NULL;
+</details>
+```
+
 ## 📈 Business Questions & SQL Solutions
 
 Each section below begins with a real-world business question and a summary of the results. The corresponding SQL logic and visualizations are provided in collapsible sections to highlight both the analytical process and the insights derived from the data.

@@ -319,6 +319,8 @@ LIMIT 10;
 | BHA_       | 129            | 127            | 0.98           | 0.14             | 11       |
 | BPS_       | 177            | 173            | 0.98           | 0.13             | 12       |
 
+<details>
+  <summary>🧠 View SQL Code</summary>
 
 ```sql
 SELECT

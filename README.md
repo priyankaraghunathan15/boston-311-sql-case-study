@@ -730,7 +730,7 @@ ORDER BY z_score DESC;
 
 - Prioritize resource allocation in high-backlog neighborhoods like Dorchester, South Boston, and Roxbury to reduce the volume of open requests and improve resident satisfaction.
 
-- Streamline resolution workflows for long-delay complaint types such as tree maintenance, graffiti removal, and traffic management—possibly through outsourcing, automation, or staffing adjustments.
+- Streamline resolution workflows for long-delay complaint types such as tree maintenance, graffiti removal and traffic management by exploring options like outsourcing, automation, or staffing adjustments.
 
 - Monitor seasonal surges in complaint volume (e.g., August spikes) to proactively prepare departments for higher demand periods with staffing or resource planning.
 

@@ -64,7 +64,7 @@ ORDER BY sla_compliance_pct ASC, avg_resolution_time_hrs DESC;
 
 <details>
   <summary> 📊 Dashboard</summary>
-  <img src="images/query 1.png" alt="Query 1" width="1000"/>
+  <img src="images/query 1_v2.png" alt="Query 1" width="1000"/>
 
   </details>
 	
@@ -564,7 +564,7 @@ ORDER BY month;
 
 <details>
   <summary> 📊 Dashboard</summary>
-  <img src="images/query 9.png" alt="Query 9" width="1000"/>
+  <img src="images/query 9_v2.png" alt="Query 9" width="1000"/>
 
   </details>
   

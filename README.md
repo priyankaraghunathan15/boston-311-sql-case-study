@@ -161,6 +161,13 @@ ORDER BY t.total_requests DESC;
 ```
 
 </details>
+
+<details>
+  <summary> 📊 Dashboard</summary>
+  <img src="images/query 3.png" alt="Query 3" width="1000"/>
+
+  </details>
+  
 <br>
 
 ### 4. Which neighborhoods have the most currently open 311 requests and what’s the average time taken to resolve cases in those neighborhoods?
@@ -554,6 +561,13 @@ ORDER BY month;
 ```
 
 </details>
+
+<details>
+  <summary> 📊 Dashboard</summary>
+  <img src="images/query 9.png" alt="Query 9" width="1000"/>
+
+  </details>
+  
 <br>
 
 ### 10. Were there any months in 2024 with unusually high complaint volumes compared to the typical pattern?

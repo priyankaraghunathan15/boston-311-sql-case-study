@@ -30,7 +30,7 @@ Each section below begins with a real-world business question and a summary of t
 This query ranks departments based on their SLA compliance percentage and average resolution time for closed requests.  
 It uses conditional aggregation, filtering, and sorting to surface operational performance metrics.
 
-  <summary>📊 Result</summary>
+  <summary> Result</summary>
 
 ![SLA by Department](images/sla_by_dept.png)
 

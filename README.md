@@ -1,7 +1,6 @@
 # Boston 311 Service Requests: SQL Analytics Case Study
 
-This project analyzes 311 service request data from the City of Boston using advanced SQL.  
-It uses SQL to analyze Boston’s 311 service request data by examining how different departments respond to public complaints, how long it takes to resolve issues, and which channels residents use to report them. The goal is to uncover patterns in service delivery and identify areas where city operations can be improved.
+This project analyzes 311 service request data from the City of Boston using advanced SQL to extract operational and service performance insights. Through structured queries and analytical techniques, it examines how city departments handle resident complaints, evaluates resolution efficiency, and identifies which submission channels are most frequently used. The goal is to uncover trends in service delivery, assess departmental workload and compliance with service-level agreements (SLAs), and inform opportunities for operational improvement.
 
 <p align="center">
   <img src="charts/boston_311_logo.png" alt="Boston 311 Logo" width="140"/>

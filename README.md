@@ -647,4 +647,10 @@ ORDER BY z_score DESC;
 
 - SLA performance trends revealed that some departments, like BTDT, experienced notable fluctuations over the year, while others like GEN_ maintained consistently strong performance.
 
+---
+
+## 🧾 Conclusion
+
+This analysis of Boston’s 311 service request data highlights key trends in departmental performance, resident concerns, and service delivery efficiency. By identifying areas with high complaint volumes, delayed resolutions, and fluctuating SLA compliance, the insights provide a foundation for targeted improvements in city operations and public service responsiveness.
+
 

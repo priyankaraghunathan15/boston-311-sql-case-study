@@ -345,8 +345,7 @@ ORDER BY sla_rank;
 ### 8. Are departments improving or declining in their SLA performance over time?
 
 **Result:**  
-<details>
-  <summary>Click to expand SLA Performance Table</summary>
+<div style="max-height: 400px; overflow-y: scroll;">
 
 | department | month_name | sla_pct | prev_month_sla_pct | change_from_last_month | total_requests |
 |---|---|---|---|---|---|
@@ -458,7 +457,7 @@ ORDER BY sla_rank;
 | PWDx | November | 0.9277 | 0.9368 | -0.0091 | 8032 |
 | PWDx | December | 0.8975 | 0.9277 | -0.0302 | 9959 |
 
-</details>
+</div>
 
 <details>
   <summary>🧠 View SQL Code</summary>

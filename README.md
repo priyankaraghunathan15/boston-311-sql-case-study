@@ -119,6 +119,7 @@ This query ranks departments based on their SLA compliance percentage and averag
 | ANML       | 636            | 0.96                | 44.20                    |
 | GEN_       | 10737          | 1.00                | 2.68                     |
 
+<img src="images/query 1_v2.png" alt="Query 1" width="1000"/>
 
 <details>
   <summary>🧠 View SQL Code</summary>
@@ -137,12 +138,6 @@ ORDER BY sla_compliance_pct ASC, avg_resolution_time_hrs DESC;
 ```
 
 </details>
-
-<details>
-  <summary> 📊 Dashboard</summary>
-  <img src="images/query 1_v2.png" alt="Query 1" width="1000"/>
-
-  </details>
 	
 <br>
 
@@ -200,7 +195,6 @@ This query finds the top 10 most frequently reported 311 service request types a
 | Recycling                        | Constituent Call     |           6684 |            10690 |                   62.53 |
 | Park Maintenance & Safety        | Citizens Connect App |           5133 |             7661 |                   67.00 |
 
-📊 Dashboard
 <img src="images/query 3_v2.png" alt="Query 3" width="1000"/>
 
 <details>
@@ -615,6 +609,8 @@ This query analyzes how 311 request volumes have changed over time by summarizin
 | November   | 19,859         | 23,734.33            |
 | December   | 20,194         | 21,119.33            |
 
+<img src="images/query 9_v2.png" alt="Query 9" width="1000"/>
+
 <details>
   <summary>🧠 View SQL Code</summary>
 
@@ -647,12 +643,6 @@ ORDER BY month;
 ```
 
 </details>
-
-<details>
-  <summary> 📊 Dashboard</summary>
-  <img src="images/query 9_v2.png" alt="Query 9" width="1000"/>
-
-  </details>
   
 <br>
 

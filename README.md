@@ -119,7 +119,6 @@ This query ranks departments based on their SLA compliance percentage and averag
 | ANML       | 636            | 0.96                | 44.20                    |
 | GEN_       | 10737          | 1.00                | 2.68                     |
 
-**Dashboard:**  
 <img src="images/query 1_v2.png" alt="Query 1" width="1000"/>
 
 <details>

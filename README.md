@@ -200,6 +200,8 @@ This query finds the top 10 most frequently reported 311 service request types a
 | Recycling                        | Constituent Call     |           6684 |            10690 |                   62.53 |
 | Park Maintenance & Safety        | Citizens Connect App |           5133 |             7661 |                   67.00 |
 
+📊 Dashboard
+<img src="images/query 3_v2.png" alt="Query 3" width="1000"/>
 
 <details>
   <summary>🧠 View SQL Code</summary>
@@ -239,12 +241,6 @@ ORDER BY t.total_requests DESC;
 ```
 
 </details>
-
-<details>
-  <summary> 📊 Dashboard</summary>
-  <img src="images/query 3_v2.png" alt="Query 3" width="1000"/>
-
-  </details>
   
 <br>
 

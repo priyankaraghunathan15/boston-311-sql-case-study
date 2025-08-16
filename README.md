@@ -8,7 +8,7 @@ This project analyzes 311 service request data from the City of Boston using adv
 
 ---
 
-## 🔧 Tools & Skills Demonstrated
+## Tools & Skills Demonstrated
 
 - PostgreSQL (via pgAdmin)
 - **Advanced SQL techniques**:
@@ -20,7 +20,7 @@ This project analyzes 311 service request data from the City of Boston using adv
 
 ---
 
-## 🛠️ Data Setup
+## Data Setup
 
 This project uses a cleaned version of Boston's 311 service request data. The following scripts define the schema for the base table and a streamlined view used throughout the analysis.
 
@@ -97,7 +97,7 @@ WHERE open_dt IS NOT NULL
 
 ---
 
-## 📈 Business Questions & SQL Solutions
+## Business Questions & SQL Solutions
 
 Each section below begins with a real-world business question and a summary of the results. The corresponding SQL logic and visualizations are provided in collapsible sections to highlight both the analytical process and the insights derived from the data.
 
@@ -694,7 +694,7 @@ ORDER BY z_score DESC;
 
 ---
 
-## 🌟 Key Insights
+## Key Insights
 
 - GEN_ and PARK departments demonstrated consistently high SLA compliance, while PWDx effectively managed the city’s highest request volume with strong performance metrics.
 
@@ -712,7 +712,7 @@ ORDER BY z_score DESC;
 
 ---
 
-## 💡 Recommendations
+## Recommendations
 
 - Prioritize resource allocation in high-backlog neighborhoods like Dorchester, South Boston, and Roxbury to reduce the volume of open requests and improve resident satisfaction.
 
@@ -728,7 +728,7 @@ ORDER BY z_score DESC;
 
 ---
 
-## 🧾 Conclusion
+## Conclusion
 
 This analysis of Boston’s 311 service request data highlights key trends in departmental performance, resident concerns, and service delivery efficiency. By identifying areas with high complaint volumes, delayed resolutions, and fluctuating SLA compliance, the insights provide a foundation for targeted improvements in city operations and public service responsiveness.
 

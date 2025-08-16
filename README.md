@@ -25,7 +25,7 @@ This project analyzes 311 service request data from the City of Boston using adv
 This project uses a cleaned version of Boston's 311 service request data. The following scripts define the schema for the base table and a streamlined view used throughout the analysis.
 
 <details>
-  <summary>📄 Table: <code>raw_311_data</code></summary>
+  <summary>Table: <code>raw_311_data</code></summary>
 
 ```sql
 CREATE TABLE raw_311_data (
@@ -61,7 +61,7 @@ CREATE TABLE raw_311_data (
     source VARCHAR(100)
 );
 ```
-</details> <details> <summary>🔍 View: <code>vw_cleaned_requests</code></summary>
+</details> <details> <summary>View: <code>vw_cleaned_requests</code></summary>
 
 ```sql
 CREATE OR REPLACE VIEW vw_cleaned_requests AS
